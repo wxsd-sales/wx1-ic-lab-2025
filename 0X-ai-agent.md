@@ -129,10 +129,11 @@ In this section, you will learn how to set up your agent to perform powerful act
     ```
     
     Add two **Entity Examples**, like _POD1_ and _POD23_:
+    
+    <p align="center">
+    <img src="images/identities-podId.png" alt="podId Identity" width="300">
+    </p>
 
-    
-    ![podID identity](images/identities-podId.png)
-    
     The field **Required** should be _Yes_
 
     Click **Add** to finish the input setup
