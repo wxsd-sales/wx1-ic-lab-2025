@@ -23,7 +23,7 @@ In this section you will learn how to add a Webex AI agent into any Connect Flow
 
     ![AI Agent Node setup](images/ai-agent-node-setup.png)
 
-    On the **AGENT** drop-down. menu, choose you the. AI Agent that you have created. Notice that with the _messageToAgent_ Custom Variable we will be triggering the Agent.
+    On the **AGENT** drop-down. menu, choose the AI Agent that you have created. Notice that with the _messageToAgent_ Custom Variable will trigger the Agent.
 
 ## Working with end customer messages
 
@@ -54,9 +54,9 @@ In this section you will learn how to add a Webex AI agent into any Connect Flow
 
     ![Partial Flow](images/ai-agent-partial-flow.png)
 
-    If you tested now the Flow it would work, but the Flow would never go on, we need to add a way to determine that the Video visit was scheduled, and go on. You will do it now:
+    If you tested now the Flow it would work, but the Flow would never go on, we need to add a way to determine that the Video visit was scheduled, and move to the nest step which is sharing a video with the end customer. You will do it now:
 
-## Escaping the flow (RENAME!!)
+## Ending the conversation with the AI Agent
 
 1. Remove the connection between the AI Agent Node, and the 'Agent Message' SMS Node. You do this by selecting the connection and clicking on the Delete button on the bottom of the Flow Editor canvas.
 
@@ -73,7 +73,7 @@ In this section you will learn how to add a Webex AI agent into any Connect Flow
 
     As you can see, we didn’t build this section of the flow in the same order as the nodes appear now, but hopefully this helped you better understand the process.
 
-    Now you only need to add error and time out control:
+    Now you only need to add error and time out control, you will do it in the following section:
 
 ## Controlling response time outs and session errors
 
@@ -85,11 +85,11 @@ In this section you will learn how to add a Webex AI agent into any Connect Flow
 
     ![Closing Session](images/ai-agent-close-session.png)
 
-4. Connect the last 'Time Out' SMS node that you created to this 'Closin Session' AI Agent Node
+4. Connect the last 'Time Out' SMS node that you created to this 'Closing Session' AI Agent Node
 
 This section of the flow should look like this:
 
-![Partial Flow](images/ai-agent-partial-flow3.png)
+    ![Partial Flow](images/ai-agent-partial-flow3.png)
 
-> NOTE: you could use only one Time Out Node if you wanted, we chose to have two to make the flow easier to follow
+    > NOTE: you could use only one 'Time Out' Node if you wanted, we chose to have two to make the flow easier to follow
 
