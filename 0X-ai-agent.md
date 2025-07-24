@@ -92,19 +92,19 @@ In this section, you will learn how to set up your agent to perform powerful act
 
 2. Click on **New action**, and use these values:
 
-    **Action name**
-    ```
-    check_availability
-    ````
+    - **Action name**
+        ```
+        check_availability
+        ```
     
-    **Action description** 
-    ```
-    check for available slots based on user's preference
-    ```
-    **Action scope**
-    ```
-    Slot filling and fulfillment
-    ````
+    - **Action description** 
+        ```
+        check for available slots based on user's preference
+        ```
+    - **Action scope**
+        ```
+        Slot filling and fulfillment
+        ````
 
     Click **Add** to finish the input setup
 
@@ -116,17 +116,17 @@ In this section, you will learn how to set up your agent to perform powerful act
     
     Setup the first identity:
     
-    **Entity Name**
-    ```
-    podId
-    ````
+    - **Entity Name**
+        ```
+        podId
+        ````
 
-    **Entity Type:** _String_
+    - **Entity Type:** _String_
 
-    **Entity Description**
-    ```
-    String identifying the pod. It should be something like PODX
-    ```
+    - **Entity Description**
+        ```
+        String identifying the pod. It should be something like PODX
+        ```
     
     Add two **Entity Examples**, like _POD1_ and _POD23_:
     
@@ -134,48 +134,41 @@ In this section, you will learn how to set up your agent to perform powerful act
     <img src="images/identities-podId.png" alt="podId Identity" width="400">
     </p>
 
-    The field **Required** should be _Yes_
-
-    Click **Add** to finish the input setup
+    The field **Required** should be _Yes_, click **Add** to finish the input setup
 
 4. Click on **new input entity** again to setup the preferred date identity:
 
+    - **Entity Name**
+        ```
+        preferredDate
+        ```
 
-    **Entity Name**
-    ```
-    preferredDate
-    ````
+    - **Entity Type:** _Date_
 
-    **Entity Type:** _Date_
-
-    **Entity Description**
-    ```
-    User’s preferred date in the given format
-    ```
-    **Value**: _YYYY-mm-dd_
+    - **Entity Description**
+        ```
+        User’s preferred date in the given format
+        ```
+    - **Value**: _YYYY-mm-dd_
     
-    The field **Required** should be _Yes_
-
-    Click **Add** to finish the input setup
+    The field **Required** should be _Yes_, click **Add** to finish the input setup
 
 5. Click on **new input entity** to define preferred time:
     
-    **Entity Name**
-    ```
-    preferredTime
-    ````
+    - **Entity Name**
+        ```
+        preferredTime
+        ```
 
-    **Entity Type:** _String_
+    - **Entity Type:** _String_
 
-    **Entity Description**
-    ```
-    User’s preferred time
-    ```
+    - **Entity Description**
+        ```
+        User’s preferred time
+        ```
     Add two **Entity Examples**, like _10:00_ and _14:30_:
     
-    The field **Required** should be _Yes_
-
-    Click **Add** to finish the input setup
+    The field **Required** should be _Yes_, click **Add** to finish the input setup
 
     Now, Your Action setup page should look like this:
     
