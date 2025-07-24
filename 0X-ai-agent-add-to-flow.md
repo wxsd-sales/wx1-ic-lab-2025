@@ -87,7 +87,7 @@ In this section you will learn how to add a Webex AI agent into any Connect Flow
 
 4. Connect the last 'Time Out' SMS node that you created to this 'Closing Session' AI Agent Node
 
-This section of the flow should look like this:
+    This section of the flow should look like this:
 
     ![Partial Flow](images/ai-agent-partial-flow3.png)
 
