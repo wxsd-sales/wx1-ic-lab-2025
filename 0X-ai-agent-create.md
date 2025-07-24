@@ -96,17 +96,11 @@ In this section, you will learn how to set up your agent to perform powerful act
         ```
         check_availability
         ```
-    
     - **Action description** 
         ```
-        check for available slots based on user's preference
+        Check for available slots based on user's preference
         ```
-    - **Action scope**
-        ```
-        Slot filling and fulfillment
-        ````
-
-    Click **Add** to finish the input setup
+    - **Action scope**: _Slot filling and fulfillment_
 
 3. Click on **new input entity**
 
@@ -120,7 +114,6 @@ In this section, you will learn how to set up your agent to perform powerful act
         ```
         podId
         ````
-
     - **Entity Type:** _String_
 
     - **Entity Description**
@@ -134,7 +127,7 @@ In this section, you will learn how to set up your agent to perform powerful act
     <img src="images/identities-podId.png" alt="podId Identity" width="400">
     </p>
 
-    The field **Required** should be _Yes_, click **Add** to finish the input setup
+    The field **Required** should be _Yes_, click **Add** to finish the input setup.
 
 4. Click on **new input entity** again to setup the preferred date identity:
 
@@ -142,7 +135,6 @@ In this section, you will learn how to set up your agent to perform powerful act
         ```
         preferredDate
         ```
-
     - **Entity Type:** _Date_
 
     - **Entity Description**
@@ -151,7 +143,7 @@ In this section, you will learn how to set up your agent to perform powerful act
         ```
     - **Value**: _YYYY-mm-dd_
     
-    The field **Required** should be _Yes_, click **Add** to finish the input setup
+    The field **Required** should be _Yes_, click **Add** to finish the input setup.
 
 5. Click on **new input entity** to define preferred time:
     
@@ -159,9 +151,7 @@ In this section, you will learn how to set up your agent to perform powerful act
         ```
         preferredTime
         ```
-
     - **Entity Type:** _String_
-
     - **Entity Description**
         ```
         User’s preferred time
@@ -170,17 +160,81 @@ In this section, you will learn how to set up your agent to perform powerful act
     
     The field **Required** should be _Yes_, click **Add** to finish the input setup
 
-    Now, Your Action setup page should look like this:
+    Now, Your _check_availabilty_ Action setup page should look like this:
     
     ![Check Availability Action](images/action-availability.png)
 
     
 6. Go to **Webex Connect Flow Builder Fulfillment** at the bottom of the page. Select the _Fullfillment Flows_ Service and the _Check Availability_ Flow.
     
+To save you time, these flows have been preloaded into the system.
+
+7. Now it is time to repeat the process for the Action that will effectively Create the booking in the calendaring system. Go back to the **Actions** section, and click *+New action**
+
+8.  Use these values:
+
+    - **Action name**
+        ```
+        create_appointment
+        ```
+    - **Action description** 
+        ```
+        Create appointment using available timeSlot and podId, and by collecting customerName
+        ```
+    - **Action scope**: _Slot filling and fulfillment_
+        
+
+9. Click on **new input entity**    
+
+    Setup the first identity, the customer name:
+
+    - **Entity Name**
+        ```
+        customerName
+        ```
+    - **Entity Type:** _String_
+
+    - **Entity Description**
+        ```
+        Name of the patient
+        ```
+        The field **Required** should be _Yes_, click **Add** to finish the input setup.
+
+10. Click on **new input entity** again to setup the podId identity:
+    
+    - **Entity Name**
+        ```
+        podId
+        ````
+    - **Entity Type:** _String_
+
+    - **Entity Description**
+        ```
+        String identifying the pod. It should be something like PODX
+        ```
+
+    Add two **Entity Examples**, like _POD1_ and _POD23_. The field **Required** should be _Yes_, click **Add** to finish the input setup.
 
 
+11. Click on **new input entity** to define time slot for the video visit:
+    
+    - **Entity Name**
+        ```
+        timeSlot
+        ```
+    - **Entity Type:** _String_
+    - **Entity Description**
+        ```
+        Date and time of the available slot
+        ```
+    Add two **Entity Examples**, like _10:00_ and _14:30_:
+    
+    The field **Required** should be _Yes_, click **Add** to finish the input setup
 
+    Now, Your _create_appointment_ Action setup page should look like this:
+        
+    ![Create Appointment Action](images/action-create-app.png)
 
+12. Go to **Webex Connect Flow Builder Fulfillment** at the bottom of the page. Select the _Fullfillment Flows_ Service and the _Create Appointment_ Flow.
 
-
-
+13. Click on **Save** to finish this section
