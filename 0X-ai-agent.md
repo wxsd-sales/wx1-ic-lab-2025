@@ -131,7 +131,7 @@ In this section, you will learn how to set up your agent to perform powerful act
     Add two **Entity Examples**, like _POD1_ and _POD23_:
     
     <p align="center">
-    <img src="images/identities-podId.png" alt="podId Identity" width="300">
+    <img src="images/identities-podId.png" alt="podId Identity" width="400">
     </p>
 
     The field **Required** should be _Yes_
