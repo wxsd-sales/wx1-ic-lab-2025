@@ -2,8 +2,9 @@
 
 Welcome to the **How to improve customer interactions with video and AI** hands-on lab!
 
-
-![Introduction](images/intro.png)
+<p align="center">
+    <img src="images/intro.png" alt="Introduction" width="500">
+</p>
 
 aaa
 
