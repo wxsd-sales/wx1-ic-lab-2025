@@ -3,8 +3,7 @@
 Welcome to the **How to improve customer interactions with video and AI** hands-on lab!
 
 
-
-
+![Introduction](images/intro.png)
 
 aaa
 
