@@ -39,3 +39,33 @@ Replacing '12225556666' by your customer  **Mobile Number**, 'customerpod4%40ema
 
 You should get and answer like this:
 
+```
+{
+   "podId":"POD4",
+   "userEmail":"studentpod4@email.com",
+   "adminMode":false,
+   "searchCriteria":{
+      "email":"customerpod4@email.com",
+      "mobileNumber":"12225556666"
+   },
+   "searchScope":"user_customers",
+   "matchingCustomers":[
+      {
+         "id":"791b0fe8-b5aa-4e18-8eb6-2076d3d20d8c",
+         "name":"Customer Pod4",
+         "email":"customerpod4@email.com",
+         "phone":"",
+         "mobileNumber":"12225556666",
+         "company":"",
+         "status":"active",
+         "createdBy":"studentpod4@email.com",
+         "createdAt":"2025-07-28T20:39:38.171Z",
+         "updatedAt":"2025-07-28T20:39:38.171Z"
+      }
+   ],
+   "totalMatches":1,
+   "totalSearched":1
+}
+```
+
+
