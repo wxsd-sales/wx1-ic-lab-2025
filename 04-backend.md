@@ -2,87 +2,40 @@
 
 One of the objectives of this lab is to demonstrate how Webex Connect can retrieve and update relevant business information from backend systems such as databases, CRMs or EMRs.
 
-Let's set this up using mockAPI.io:
+You have access to a mock up database for every POD where you can provision your own customers
 
-## Create a new Project
+## Access your Customer Database
 
-1. Open a browser and navigate to: https://mockapi.io
+Go to this [link](https://appointment-management-production-095a.up.railway.app/database.html), use your POD number (for example _POD4_) and an attendee email address (for example _studentpod4@email.com_)
 
-   Sign-in/sign-up as needed to log in.
+> NOTE: this attendee email address can be any, it won't be used later in the flow. It is used to keep POD's information isolated: you will have access only to your own customers, other lab attendees won't see your customer data. Do not share this email address with other lab attendees !!
 
-2. Select **New Project**:
+## Create a customer
 
-   ![New Project](images/new_project.png)
+Click **Add New Customer**, type **Name**, **Email** and **Mobile Number**. **Phone** and **Company** are not mandatory and won't be used during the lab, you can add some values for demo purposes.
 
-   and give it a name, for example: `My First Project`
-   
-   You can leave the **API Prefix** blank:
+Example:
 
-   !![Project Name](images/project_name.png)
+- Name = `Customer Pod4`
+- Email = `customerpod4@email.com`
+- Mobile Number = `12225556666`
 
-## Create a New resource
+**Email** and **Mobile Number** have to be real, they will be used later when we work on the Webex Connect Flow.
 
-1. Choose **New Resource**, and give it a name of your choice:
+## Check your Database record
 
-   ![New Resource](images/new_resource.png)
+You should be able to get your new customer details using this API request:
 
-   (``ciscoliveEMEA2024`` is just an example)
-
-2. Fill in the **Schema** section as shown below:
-   ![Resource Schema](images/resource_schema.png)
-
-1. Click on **Create**.
-
-## Populate database records
-
-   You can ask mockAPI to create sample data automatically.
-
-1. Select the gray bar under your resource and drag to indicate how many records you would like created.  Select something close to: `20`
-
-   ![Sample Data](images/sample_data.png)
-
-2. Click on **Data**.
-
-   You will see all the records that have been created. 
-   
-3. For this lab, you need to update the first record with your name and mobile number, we will use later, here's an example:
-
-```js
-   {
-      "name": "Victor Vazquez",
-      "avatar": "https://cloudflare-ipfs.com/ipfs/Qmd3W5DuhgHirLHGVixi6V76LhCkZUz6pnFt5AJBiyvHye/avatar/227.jpg",
-      "mobileNumber": "34XXXXXXXXX",
-      "address": "6002 Roob Lodge",
-      "city": "Barcelona",
-      "country": "Spain",
-      "email": "Angie17@hotmail.com",
-      "videoCallSheduled": true,
-      "specialist": "Dr Julia Smith",
-      "id": "1"
-   }
 ```
-   **IMPORTANT**: `mobileNumber` must include country code, and must **NOT** include '`+`'
+curl --request GET \
+  --url 'https://appointment-management-production-095a.up.railway.app/api/customers/search/?mobileNumber=12225556666&email=customerpod4%40email.com' \
+  --header 'content-type: application/json' \
+  --header 'x-pod-id: POD4' \
+  --header 'x-user-email: studentpod4@email.com'
 
-4. Click on the small resource name link:
+```
 
-   ![Endpoint API](images/endpoint_api.png)
+Replacing '12225556666' by your customer  **Mobile Number**, 'customerpod4%40email.com' by your customer **Email**, and studentpod4@email.com by your attendee email address.
 
-   This will open a browser tab and display the returned JSON data from your mock API resource.
-
-   Note the URL, as this is the **Endpoint API** that you will use later in the lab.
-   
-   It should look something like:
-   
-   `https://xxxxxxxxxxxxxxxxxxxxxxxx.mockapi.io/ciscoliveEMEA2024`
-
-
-
-
-
-
-
-
-
-
-
+You should get and answer like this:
 
