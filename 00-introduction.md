@@ -6,23 +6,25 @@ Welcome to the **How to improve customer interactions with video and AI** hands-
     <img src="images/intro.png" alt="Introduction" width="900">
 </p>
 
-aaa
 
 
 ## Objectives
 
-In this lab we will cover:
+At the end of this lab, you should be able to build a Webex Connect flow, ready to be used for a real business use case.
 
-* An overview of Webex Instant Connect and its capabilities
-
-* How to create Instant Connect (IC) meeting links using IC API
-
-* Designing, configuring and testing a Webex Connect flow, ready to be used for a real business use case
-
-The objective is to create a Webex Connect flow for a healthcare use case.
+<p align="center">
+    <img src="images/flow-final-2025.png" alt="Webex Connect flow" width="900">
+</p>
 
 
-## Prerequisites
+In the process, you will:
+- Learn about Instant Connect and APIs
+- Learn advanced Webex Connect integration and messaging capabilities
+- Learn how to build a Webex AI Agent
+
+
+
+## Prerequisites REMOVE FOR THE FINAL VERSION. IS IT READY TO USE CUSTOM DB?
 
 - Guest-to-guest Webex Meetings site. You can get a developer sandbox for free at: https://developer.webex.com/docs/service-apps-as-g2g-meeting-facilitator-guide#
 
