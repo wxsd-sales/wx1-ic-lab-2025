@@ -3,6 +3,7 @@
 The objective is to create a Webex Connect flow for this healthcare use case. To save you time, part of the workflow has already been created in advance. We will see how to add the most relevant functionalities, and we will do it in sections:
 
 1. Introduction
+2. Get Customer Data from CRM
 
 
 PENDING TO FINISH
@@ -51,7 +52,10 @@ Select the Services for you POD, and click on the Service named '_Healthcare Mai
 
     - For **Method** select: `GET`
 
-   - For **Endpoint URL**, type: `$(crmAPIEndpoint)/customers/search/?mobileNumber=$(mobileNumber)&email=$(customerEmail)`
+   - For **Endpoint URL**, type: 
+      ```
+      $(crmAPIEndpoint)/customers/search/?mobileNumber=$(mobileNumber)&email=$(customerEmail)
+      ```
    This is an example of the use of Variables inside Connect. You can access easily access them in the **Input Variables**, **Custom Variables** section on the right
 
    - Configure your headers as in the following image
