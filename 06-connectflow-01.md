@@ -4,6 +4,7 @@ The objective is to create a Webex Connect flow for this healthcare use case. To
 
 1. Introduction
 2. Get Customer Data from CRM
+3. Add the Webex AI Agent to the Flow
 
 
 PENDING TO FINISH
