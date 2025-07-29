@@ -131,7 +131,7 @@ Select the Services for you POD, and click on the Service named '_Healthcare Mai
 - Add another _On-leave_ Action, this time choose `[Debug] Log a Value to transaction log`. For the of `Log Id` you can use '1001', and `$(customerName)` for the value. This will help you troubleshooting the flow if needed.
 
 
-      ![Customer Name](images/trans-action-crm.png)
+   ![Transaction Actions, CRM](images/trans-action-crm.png)
 
 
 Mission accomplished! Learn how to integrate Webex Connect with external databases
