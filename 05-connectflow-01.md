@@ -62,7 +62,7 @@ Select the Services for you POD, and click on the Service named '_Healthcare Mai
 
       ![Get Customer Name](images/http-request-crm.png)
    
-   where `x-pod-id` is your POD number, and `x-user-email`is the attendee email of your choice
+   Where `x-pod-id` is your POD number, and `x-user-email`is the attendee email of your choice
 
    - Rename this http request node to something like 'Get Customer Name from CRM' and **Save**.
 
@@ -70,10 +70,6 @@ Select the Services for you POD, and click on the Service named '_Healthcare Mai
 4. Add a **Data Parser** node, and connect it to the **HTTP Request Node**. This will allow you to parse the data received from the customer data base to be used later in any node in the flow.
 
    - For **Input: Import Data From**: under the **Input Variables** section to the right, select the `http.response.body` variable from the previous **HTTP Request** node 'Get Customer Name From' configured in the previous step:
-
-    ![Data Parser](images/data-parser-new.png)
-
-    > **Note:** Node number may be different than shown above.
 
     - Now, we will populate **Sample Body (optional)** with some JSON that exemplifies the data we expect to be parsing.
 
