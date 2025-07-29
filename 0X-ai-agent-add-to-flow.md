@@ -91,5 +91,6 @@ In this section you will learn how to add a Webex AI agent into any Connect Flow
 
     ![Partial Flow](images/ai-agent-partial-flow3.png)
 
+
     > NOTE: you could use only one 'Time Out' Node if you wanted, we chose to have two to make the flow easier to follow
 
