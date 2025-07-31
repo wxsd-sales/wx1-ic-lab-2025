@@ -124,4 +124,6 @@ Next we will use the [Webex messaging API](https://developer.webex.com/docs/api/
     
     - Rename the node to 'Offer host URL to expert' and **Save** it
 
+    Mission accomplished! Learn how to integrate Webex Connect with Instant Connect to create the Instant Connect Meetings Links, and share them with the customer and the expert.
+
 
