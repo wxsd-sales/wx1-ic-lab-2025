@@ -5,17 +5,7 @@ The objective is to create a Webex Connect flow for this healthcare use case. To
 1. Introduction
 2. Get Customer Data from CRM
 3. Add the Webex AI Agent to the Flow
-
-
-PENDING TO FINISH
-
-2. Create a new blank flow
-3. Flow trigger
-4. Welcome message
-5. Surgery Reminder
-6. Video Meeting Scheduling
-7. Create and share Instant Connect Meeting Links
-8. Update CRM
+4. Create and share the Webex Instant Connect Meeting Links
 
 ## Introduction
 
