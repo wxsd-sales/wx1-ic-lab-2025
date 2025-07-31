@@ -2,7 +2,7 @@
 
 ## Create Meeting Links
 
-Similarly to what we did previously in the **Webex Instant Connect API** section earlier, here we will create Webex Instant Connect meeting links.  However, instead of using curl we will use an **HTTP Request** node. 
+Similarly to what we did previously in the **Webex Instant Connect API** section , here we will create Webex Instant Connect meeting links.  However, instead of using curl we will use an **HTTP Request** node. 
 
 1. Add a new **HTTP Request** node to the canvas, and connect it to the  **Delay** node orange dot
 
@@ -12,18 +12,21 @@ Similarly to what we did previously in the **Webex Instant Connect API** section
 
     Here you have some of the values that you can copy-paste:
 
-    - Endpoint URL = `$(mtg-broker-url)/api/v2/joseencrypt`
-    - Body = 
+    - Endpoint URL:
+        ```$(mtg-broker-url)/api/v2/joseencrypt```
+    - Body: 
+        ```
+        {
+            "jwt": {
+            "sub": "Video Call with your practitioner - $(n2.whatsapp.timestamp)"
+            },
+            "aud": "a4d886b0-979f-4e2c-a958-3e8c14605e51",
+            "provideShortUrls": "true",
+            "verticalType": "hc",
+            "loginUrlForHost": false
+        }
+        ````
 
-            {
-                "jwt": {
-                "sub": "Video Call with your practitioner - $(n2.whatsapp.timestamp)"
-                },
-                "aud": "a4d886b0-979f-4e2c-a958-3e8c14605e51",
-                "provideShortUrls": "true",
-                "verticalType": "hc",
-                "loginUrlForHost": false
-            }
         With the option `verticalType` = `hc` , Instant Connect user interface will be automatically customized for a Healthcare use case.
 
 - Rename the node to 'Create meeting links' and **Save** it
@@ -36,10 +39,10 @@ Similarly to what we did previously in the **Webex Instant Connect API** section
 
 > **Note:** Node numbers may be different.
 
-- For the **Sample Body**, you can use the response body you got with curl, ot use the Test option of the http request node 
+- For the **Sample Body**, you can use the response body you got with curl, ot use the 'Test' option of the http request node 
 
     Here you have on example that you can copy and paste:
-
+        ```
         {
             "host": [
                 {
@@ -55,6 +58,7 @@ Similarly to what we did previously in the **Webex Instant Connect API** section
             ],
             "baseUrl": "https://instant.webex.com/visit/"
         }
+        ```
 
 - Click on **Parse**
 
