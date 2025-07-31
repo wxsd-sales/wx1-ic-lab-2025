@@ -13,7 +13,9 @@ Similarly to what we did previously in the **Webex Instant Connect API** section
     Here you have some of the values that you can copy-paste:
 
     - Endpoint URL:
-        ```$(mtg-broker-url)/api/v2/joseencrypt```
+        ```
+        $(mtg-broker-url)/api/v2/joseencrypt
+        ```
     - Body: 
         ```
         {
@@ -39,7 +41,7 @@ Similarly to what we did previously in the **Webex Instant Connect API** section
 
 > **Note:** Node numbers may be different.
 
-- For the **Sample Body**, you can use the response body you got with curl, ot use the 'Test' option of the http request node 
+- For the **Sample Body**, you can use the response body you got with curl, ot use the http request node _Test_ option.
 
     Here you have on example that you can copy and paste:
         ```
