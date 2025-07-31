@@ -126,4 +126,13 @@ Next we will use the [Webex messaging API](https://developer.webex.com/docs/api/
 
     Mission accomplished! Learn how to integrate Webex Connect with Instant Connect to create the Instant Connect Meetings Links, and share them with the customer and the expert.
 
+    ## SECTION FOR NON US ATTENDEES
 
+    If you do not have a US mobile number, you can still test your flow.
+
+    1. Go to the _Channel Selection_ **Branch Node**, and connect the 'Webex' outcome to the **HTTP Request Node** named _Reminder-Webex Channel_   
+
+
+        ![Webex Option](images/webex-option-1.png)
+
+    The Webex AI Agent has been added in this WEbex flow branch for you, you do not need to to it again.
