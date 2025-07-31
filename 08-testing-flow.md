@@ -2,7 +2,7 @@
 
 ## Publish the Flow
 
-Click on **MAKE LIVE**, add you some comments (Optional) and click on **Make Live** again.
+Click on **MAKE LIVE**, add some comments (Optional) and click on **Make Live** again.
 
 
 ## Trigger the Flow
@@ -15,10 +15,13 @@ Click on **MAKE LIVE**, add you some comments (Optional) and click on **Make Liv
 
         Type your mobile number. This has to be a real working US mobile Number, the same one you chose as the Customer mobile number in the previous **Backend Preparation** section.
 
-        In the _Webex Connect Webhook URL_ input filed, paste your WebHook URL (`https://hooks.us.webexconnect.io/events/TOONJ56GSA` in this example)
+        In the _Webex Connect Webhook URL_ input filed, paste your WebHook URL (`https://hooks.us.webexconnect.io/events/TOONJ56GSA` in this example). Click **Submit**.
 
     - ATTENDEES WITHOUT US MOBILE NUMBER
 
         Type your email address. This has to be a real working email address, the same one you chose as the Customer email address in the previous **Backend Preparation** section.
 
-        In the _Webex Connect Webhook URL_ input filed, paste your WebHook URL (`https://hooks.us.webexconnect.io/events/TOONJ56GSA` in this example
+        In the _Webex Connect Webhook URL_ input filed, paste your WebHook URL (`https://hooks.us.webexconnect.io/events/TOONJ56GSA` in this example. Click **Submit**.
+
+
+    ![Testing the Flow](images/testing-flow.png)
