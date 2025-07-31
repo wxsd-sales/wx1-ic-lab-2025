@@ -113,12 +113,14 @@ Next we will use the [Webex messaging API](https://developer.webex.com/docs/api/
 
         Here you have some of the values that you can copy-paste:
 
-        - Body = 
-
+        - Body:
+            ```
                 {
                     "toPersonEmail":"$(expertEmail)",
                     "text":"$(customerName) is waiting for you. Please click on this link to join the video session: $(hostURL)"
-                }  
+                } 
+            ```
+    
     - Rename the node to 'Offer host URL to expert' and **Save** it
 
 
