@@ -86,26 +86,27 @@ Similarly to what we did previously in the **Webex Instant Connect API** section
 
 ## Send link to customer
 
-1. Go to the 'Welcome' **WhatsApp** node, select it, copy-paste it and connect it to the previous **Data Parser** node
+1. Copy any of the SMS nodes in the flow, copy and paste it, and connect it to the previous **Data Parser** node
 
-2. Change the Payload to: `https://qaemailmedia.s3.amazonaws.com/3cd774f7-5b9b-4098-a88c-0b0ed969c80b/hospitallogo_4360154910688899.jpeg`
+2. Change the **Message** to:
+    ```
+    Hi $(customerName), you can join your video appointment in this link: $(guestURL)
+    ```
 
-3. Change the Caption to: `Hi $(customerName), you can join your video appointment in this link: $(guestURL)`
+3.  Rename the node to 'Offer guest URL to customer' and **Save** it
 
-4. Rename the node to 'Offer guest URL to customer' and **Save** it
 
 ## Send link to expert
 
 Next we will use the [Webex messaging API](https://developer.webex.com/docs/api/v1/messages/create-a-message) to send a message from your Webex bot to the expert.
 
-1. Let's create some Custom Variables
+1. Choose your expert
 
-    - Create one named `WebexAPI`and give it the value `https://webexapis.com/v1`
-    - Create a second Custom Variable called `expertEmail`. Flow will be sending the host url to this user a Webex message, choose now wo do you want to send the message to.
+    Go to Custom Variables, and type the expert email address. The Webex message will be sent to this address
 
-    In a real project, normally there is a process or system in place to choose the best expert for a given customer or interaction. In this case, the expert is a static value.
+    In a real project, normally there will be a process or system in place to choose the best expert for a given customer or interaction. In this case, the expert is a static value.
 
-2. Add an **HTTP Request** node to the canvas, and connect it to the previous **WhatsApp** node.
+2. Add an **HTTP Request** node to the canvas, and connect it to the previous **SMS** node.
 
     - Configure the node as shown below:
 
