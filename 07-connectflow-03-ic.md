@@ -44,23 +44,23 @@ Similarly to what we did previously in the **Webex Instant Connect API** section
 - For the **Sample Body**, you can use the response body you got with curl, ot use the http request node _Test_ option.
 
     Here you have on example that you can copy and paste:
-        ```
-        {
-            "host": [
-                {
-                    "cipher": "eyJwMnMiOiJpNmZta3dp...cWl3ZGw2cjFuSkg0bEUj",
-                    "short": "oCVp2LD"
-                }
-            ],
-            "guest": [
-                {
-                    "cipher": "eyJwMnMiOiJEQVdaHOBS...RDTvlZ-aLLRdIMSmCwEc",
-                    "short": "ckmNR7I"
-                }
-            ],
-            "baseUrl": "https://instant.webex.com/visit/"
-        }
-        ```
+    ```
+    {
+        "host": [
+            {
+                "cipher": "eyJwMnMiOiJpNmZta3dp...cWl3ZGw2cjFuSkg0bEUj",
+                "short": "oCVp2LD"
+            }
+        ],
+        "guest": [
+            {
+                "cipher": "eyJwMnMiOiJEQVdaHOBS...RDTvlZ-aLLRdIMSmCwEc",
+                "short": "ckmNR7I"
+            }
+        ],
+        "baseUrl": "https://instant.webex.com/visit/"
+    }
+    ```
 
 - Click on **Parse**
 
