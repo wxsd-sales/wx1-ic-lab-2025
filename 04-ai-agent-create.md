@@ -1,8 +1,8 @@
-# Creating the AI Agent
+# Building your AI Agent
 
 In this section you will learn how to create an Autonomous Webex AI Agent.
 
-## Sub-section?
+## Agent Creation
 
 1. Log in Control Hub with your admin user, go to **Services**, **Contact Center**:
 
