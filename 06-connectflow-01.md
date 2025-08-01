@@ -37,7 +37,7 @@ This is the interaction flow:
    <img src="images/services-new.png" alt="Webex Connect Services" width="450">
    </p>
 
-Select the Services for you POD, and click on the Service named '_Healthcare Main Flow_'
+Select the Services for you POD, and click on the flow named '_Healthcare Main Flow_'
 
 3. Add an **HTTP Request** node to the canvas, and connect it to the first Node **Configure Webhook** . We will use this node to retrieve the customer name from the customers data base.
 
