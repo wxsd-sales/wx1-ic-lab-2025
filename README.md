@@ -1,6 +1,6 @@
 # Content
 1. [Introduction](00-introduction.md)
-2. [Webex Connect Overview](01-overview.md)
+2. [Webex Connect Overview: Getting customer date from CRM](01-overview.md)
 3. [Webex Connect configuration](02-activation.md)
 4. [Webex Connect API](03-instantconnectapi.md)
 5. [Building your Webex AI Agent](04-ai-agent-create.md)
